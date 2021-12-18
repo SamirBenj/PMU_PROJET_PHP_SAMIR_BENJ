@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+html{
+    /* background-color: rgba(224, 224, 236, 0.26); */
+    background-color: white;
+
+}
+.bg-dark{
+    margin: 8px;
+border-radius: 8px;
+    background-color:rgba(82, 79, 79, 1);
+}
+.produitsRecent{
+    float: left;
+    width: 75%;
+    text-align: center;
+    padding: 30px;
+    /* background-color: rgba(89, 89, 238, 0.719); */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 100px,auto;
+}
+#produitSeule{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #F0F1F3;
+}
+#produitSeule h4 {
+    padding: 10px;
+    font-size: 20px;
+    /* font-family: 'Montserrat', sans-serif; */
+
+} 
+#produitSeule p {
+    font-size: 13px;
+}
+#produitSeule #quantiterInput {
+    text-align: center;
+    margin: 10px;
+    width: 30px;
+}
+#produitSeule #buyButton {
+    border:none; 
+    background-color: rgba(54, 54, 224, 0.75); 
+    color:white; 
+    padding: 10px; 
+    border-radius:10px;
+}
+#produitSeule button {
+    /* background-color: rgba(0, 0, 255, 0.4); */
+    background-color: rgba(189, 109, 109, 0.65);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+#produitSeule span {
+        font-size: 12px;
+}
+
+.ProduitVendu {
+    padding: 23px;
+}
+.fas {
+    color: white;
+}
+
+#navigationBar {
+    /* background-color: rgba(0, 0, 255, 0.253); */
+    /* background-color: rgb(169,169,169);
+    border-radius: 16px;
+    padding: 15px;
+    width: -webkit-fill-available;
+    text-align: right; */
+}
+
+#navigationBar a {
+    border-radius: 10px;
+    /* background-color: rgba(89, 89, 238, 0.719); */
+    /* background-color:  rgba(189, 109, 109, 0.36);
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    margin: 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif; */
+}
+
+#navigationBar a:hover {
+    /* background-color: rgba(89, 89, 238, 0.89); */
+    /* background-color:rgb(189, 109, 109); */
+}
+
+/* #navigationBar input {
+    border-style: none;
+    background-color: rgb(169,169,169);
+} */
+
+#navigationBar input::placeholder {
+    color: white;
+    font-size: 15px;
+}
+.categorie a {
+    background-color: rgba(170, 170, 170, 0.22);
+    padding: 9px;
+    margin: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 13px;
+}
+.categorie {
+    margin: 15px;
+    text-align: center;
+}
+
+
+#rightBox {
+    float: right;
+    text-align: center;
+    /* background: rgb(169,169,169); */
+    background-color: rgba(170, 170, 170, 0.74);
+    width: 22%;
+    border-radius: 36px;
+    height: 130vh;
+    padding: 18px;
+
+}
+
+#rightBox h4{
+    font-family: 'MontserratBold';
+    text-transform: uppercase;
+    /*added*/
+    background: rgba(189, 109, 109, 0.2);
+    border-radius: 9px;
+    padding: 9px;
+    color: white;
+}
+
+#eachProducts {
+    /* margin: 0 auto; */
+    margin: 10px;
+}
+ #produitVente {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    /* width: fit-content; */
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#produitVente img {
+    margin: 2px;
+}
+#info {
+    /* display: table-column; */
+    padding: 10px;
+}
+
+a .fas {
+    font-size: 15px;
+}
+@font-face {
+    font-family: "MontserratSemiBoldItalic";
+    src: url("Montserrat/Montserrat-SemiBoldItalic.ttf");
+}
+@font-face {
+    font-family: "MontserratItalic";
+    src: url("Montserrat/Montserrat-Italic.ttf");
+}
+@font-face {
+    font-family: "MontserratBold";
+    src: url("Montserrat/Montserrat-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "MontserratBoldItalic";
+    src: url("Montserrat/Montserrat-BoldItalic.ttf");
+}
