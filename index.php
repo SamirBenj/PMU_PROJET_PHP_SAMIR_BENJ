@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <!-- <meta http-equiv="refresh" content="1"> -->
     <link href="./fonts/css/all.css" rel="stylesheet"> <!--load all styles -->
         <title>HomePage</title>
@@ -71,7 +70,7 @@
             <li><a class="dropdown-item" href="conseils.php" >Conseils</a></li>
             <li><a class="dropdown-item" href="#">Promotions</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Mes Commandes</a></li>
+            <li><a class="dropdown-item" href="mesCommande.php">Mes Commandes</a></li>
           </ul>
         </li>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">

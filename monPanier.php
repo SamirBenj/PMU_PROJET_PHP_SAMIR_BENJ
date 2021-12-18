@@ -9,7 +9,9 @@
     
     <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Mon pannier</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <title>Mon pannier</title>
     
 </head>
 <body>
@@ -24,10 +26,10 @@
             Autres
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="conseils.php" >Conseils</a></li>
+            <li><a class="dropdown-item" href="conseils.php">Conseils</a></li>
             <li><a class="dropdown-item" href="#">Promotions</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Mes Commandes</a></li>
+            <li><a class="dropdown-item" href="mesCommande.php">Mes Commandes</a></li>
           </ul>
         </li>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -108,7 +110,7 @@ session_start();
                         <td>".$value['pname']."</td>
                         <td>".$value['pprice']."</td>
                         <td>".$value['qty']."</td>
-                        <td>$".number_format($value['pprice'] * $value['qty'],2)."</td>
+                        <td>".number_format($value['pprice'] * $value['qty'],2)."€</td>
                         <td><a href='monPanier.php?action=remove&id=".$value['id']."'</td>
                             <button class='btn btn-danger btn-block'>Effacer</button>
                             </a>

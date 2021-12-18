@@ -186,7 +186,7 @@ public function affichageVente(){
  
             $classConnect = new Db();
             $connect = $classConnect -> connection();
-            $sql = "SELECT * FROM Commandes";
+            $sql = "SELECT * FROM Commande";
 
             $query = $connect -> prepare($sql);
         
@@ -195,15 +195,11 @@ public function affichageVente(){
             if($queryIsOk){
         while($ligne = $query->fetch(PDO::FETCH_OBJ)){
                       
-          echo "<table class='table table-bordered table-striped'>
-          <tr>
-              <th>ID</th>
-              <th>Nom</th>
-              <th>Prix</th>
-              <th>Quantité</th>
-              <th>Prix Total</th>
-              <th>Action</th>
-          </tr> ";
+          echo "
+          <td>".$ligne-> comNum."</td>
+          <td>".$ligne-> comDate."</td>
+          <td>".$ligne-> comPrix."</td>       
+          ";
            
         }
         }else{
